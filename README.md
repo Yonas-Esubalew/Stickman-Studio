@@ -23,6 +23,23 @@ This project is configured for Netlify in `netlify.toml`.
 
 To deploy from GitHub, push the `main` branch to GitHub, then in Netlify choose **Add new site → Import an existing project**, connect the repository, and deploy. Netlify will use the checked-in settings automatically. No environment variables are required.
 
+## Deploy to Vercel
+
+This project is configured for Vercel in `vercel.json`.
+
+- Framework preset: Vite
+- Build command: `npm run build`
+- Output directory: `dist`
+- Node.js version: use the current Vercel default (Node.js 20 or newer)
+
+To deploy from GitHub:
+
+1. Sign in at [vercel.com](https://vercel.com/) and choose **Add New → Project**.
+2. Connect GitHub if asked, then import `Yonas-Esubalew/Stickman-Studio`.
+3. Keep the project root as the repository root. Vercel reads the build and output settings from `vercel.json`.
+4. Choose **Deploy**. No environment variables are required.
+5. Future pushes to `main` will trigger a new production deployment automatically.
+
 To create and inspect a production build locally:
 
 ```bash
